@@ -101,13 +101,14 @@ if pred == ['Y']:
 else:
     print("We are sorry, your Loan will not be approved")
 
+```
 
 ### Decision Tree Classifier
 
 - Imported from `sklearn.tree`
 - Trained on 4 numeric features
 - Visualized using `plot_tree()`
-```
+
 **Sample usage:**
 
 ```python
