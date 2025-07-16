@@ -100,3 +100,32 @@ if pred == ['Y']:
     print("We are glad to inform that your Loan will be approved")
 else:
     print("We are sorry, your Loan will not be approved")
+
+
+### Decision Tree Classifier
+
+- Imported from `sklearn.tree`
+- Trained on 4 numeric features
+- Visualized using `plot_tree()`
+
+**Sample usage:**
+
+```python
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+
+# Train the model
+model = DecisionTreeClassifier()
+model.fit(feat, target)
+
+# Visualize the tree
+plot_tree(model)
+
+# Predict for new input
+pred = model.predict([[ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term]])
+print(pred)
+
+if pred == ['Y']:
+    print("We are glad to inform that your Loan will be approved")
+else:
+    print("We are sorry, your Loan will not be approved")
+
